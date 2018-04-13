@@ -1,0 +1,18 @@
+{
+    "name": "bulkgate/ssr-client",
+    "description": "Client for BulkGate portal server side rendering",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Martin",
+            "email": "martinkreizl@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0",
+        "bulkgate/utils": "^1.0"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
