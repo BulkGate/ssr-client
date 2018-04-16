@@ -46,7 +46,8 @@ class Client
             "X-Requested-With" => "XMLHttpRequest",
             "X-BulkGate-Application-ID" => $this->credentials["application_id"],
             "X-BulkGate-Application-Token" => $this->credentials["application_token"],
-            "X-BulkGate-Application-Product" => $this->credentials["product"]
+            "X-BulkGate-Application-Product" => $this->credentials["product"],
+            "X-BulkGate-Application-Language" => $this->credentials["language"],
         ]);
     }
 
