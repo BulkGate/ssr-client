@@ -30,7 +30,7 @@ class Header implements IHeader
     public static function createFromRaw($raw)
     {
         preg_match('~([\w-]+?)(?:\h+)?:(?:\h+)?(.*?)$~s', $raw, $m);
-        list($name, $value) = [$m[1], $m[2]];
+        list($name, $value) = [$m[1], trim($m[2])];
 
         return new self($name, $value);
     }
