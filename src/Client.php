@@ -51,6 +51,11 @@ class Client
         ]);
     }
 
+    public function __get($name)
+    {
+        return $this->$name;
+    }
+
     /**
      * @param string $url
      * @return string
