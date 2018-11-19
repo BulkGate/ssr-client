@@ -108,8 +108,8 @@ class Client
         ];
 
         return <<<EOT
-<script type="text/javascript" src="{$this->createUrl("/dist/widget-api/widget-api.js")}"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="{$this->createUrl("/dist/widget-api/widget-api.js")}" async></script>
+<script type="bulkgate-widget" data-widget-priority="-1">
 _bg_client.initSSRWidget($credentials, $init);
 </script>
 EOT;
